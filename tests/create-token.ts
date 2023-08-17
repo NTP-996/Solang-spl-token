@@ -22,6 +22,7 @@ describe("create-token", () => {
 
   it("Is initialized!", async () => {
     // Initialize data account for the program, which is required by Solang
+    console.log("Start");
     const tx = await program.methods
       .new()
       .accounts({ dataAccount: dataAccount.publicKey })
